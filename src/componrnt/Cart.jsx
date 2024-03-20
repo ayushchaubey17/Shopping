@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import { arr2 } from "./ram";
 import CartComponent from "./CartComponent";
 
+
+
 export default function Cart() {
   let [arr3, setArr3] = useState(arr2);
   let [show,setShow] = useState(false);
-  let n = arr3.length;
+  
+let n = arr2.length;
+
+setTimeout(() => {
+  setArr3(arr2);
+}, 1000);
+ 
+
+
   let cartsms = n == 0 ? "your cart is empty" : "your card is ready here";
 
   let sum = 0;
@@ -64,3 +74,5 @@ setShow(true);
     </div>
   );
 }
+
+

@@ -35,7 +35,7 @@ function App() {
 </Routes>
 
 
-{/* <FooterBar/> */}
+<FooterBar/>
 
 
 </div>
